@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do Aluno | Nome do Aluno</title>
     <style>
         :root {
-            --primary-color: #ff00d9; /* Cor institucional */
-            --accent-color: #b224dd;    /* Cor personalizada do aluno */
-            --bg-light: #ff72d0;
-            --text-dark: #ff00bf;
+            --primary-color: #b424bf;
+            /* Cor institucional */
+            --accent-color: #b224dd;
+            /* Cor personalizada do aluno */
+            --bg-light: #e616a1;
+            --text-dark: #c51df4;
         }
 
         body {
@@ -25,7 +28,7 @@
             padding: 20px;
             text-align: center;
             border-bottom: 3px solid var(--primary-color);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
         .company-logo {
@@ -45,7 +48,7 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         .student-photo {
@@ -110,7 +113,8 @@
         .work-thumb {
             width: 100%;
             height: 180px;
-            background: #ddd; /* Placeholder para imagem do trabalho */
+            background: #ddd;
+            /* Placeholder para imagem do trabalho */
             object-fit: cover;
         }
 
@@ -121,10 +125,14 @@
         }
 
         @media (max-width: 600px) {
-            .profile-container { flex-direction: column; text-align: center; }
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -133,13 +141,14 @@
 
     <main>
         <section class="profile-container">
-            <img src="https://lh3.googleusercontent.com/a/ACg8ocIoHP73m5ndWXk4tesKVd41XE-BkM8EUDfsT6TDI8dKDbrD-h5h=s360-c-no" alt="Nome do Aluno" class="student-photo">
-            
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIoHP73m5ndWXk4tesKVd41XE-BkM8EUDfsT6TDI8dKDbrD-h5h=s360-c-no"
+                alt="Nome do Aluno" class="student-photo">
+
             <div class="student-info">
                 <h1>GABRIELA CROSCIATTE</h1>
                 <p>Especialista em tratamentos de pele.</p>
                 <p>Jogo vôlei, natação, YESHUA, canto, academia.</p>
-                
+
                 <div class="skills-tags">
                     <span class="skill">beleza</span>
                     <span class="skill">dermatologia</span>
@@ -151,7 +160,7 @@
 
         <section class="works-section">
             <h2 class="works-title">Trabalhos Realizados</h2>
-            
+
             <div class="works-grid">
                 <div class="work-item">
                     <img src="https://via.placeholder.com/300x200" class="work-thumb" alt="Projeto 1">
@@ -172,4 +181,5 @@
     </main>
 
 </body>
+
 </html>
